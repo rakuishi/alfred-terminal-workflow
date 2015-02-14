@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.rakuishi.alfred.terminal</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>DFE338B9-61FB-4423-AF12-B02D874D71C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9AEDF50D-A8D6-4777-950A-510F3B55F4B0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>rakuishi</string>
+	<key>description</key>
+	<string>Open active Finder folder in Terminal</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Terminal</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Finder"
+		set selections to selection
+		if ((count of selections) &gt; 0) then
+			set myPath to (quoted form of POSIX path of (item 1 of selections as alias))
+			tell application "Terminal"
+				activate
+				tell window 1
+					do script "cd $(dirname " &amp; myPath &amp; "); clear"
+				end tell
+			end tell
+		end if
+	end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>9AEDF50D-A8D6-4777-950A-510F3B55F4B0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>terminal</string>
+				<key>subtext</key>
+				<string>Open active Finder folder in Terminal</string>
+				<key>text</key>
+				<string>Open Terminal</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>DFE338B9-61FB-4423-AF12-B02D874D71C6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Open active Finder folder in Terminal
+https://github.com/rakuishi/alfred-terminal-workflow</string>
+	<key>uidata</key>
+	<dict>
+		<key>9AEDF50D-A8D6-4777-950A-510F3B55F4B0</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>DFE338B9-61FB-4423-AF12-B02D874D71C6</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/rakuishi/</string>
+</dict>
+</plist>
