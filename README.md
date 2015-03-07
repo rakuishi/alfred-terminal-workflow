@@ -10,8 +10,7 @@ A workflow for [Alfred App](http://www.alfredapp.com) 2.0. Open active Finder fo
 ## Installation
 
 You can download the extension here: [donwload](https://github.com/rakuishi/alfred-terminal-workflow/blob/master/Terminal.alfredworkflow?raw=true)  
-Alternatively clone the repository to you local machine.  
-Simply doubleclick `Terminal.alfredworkflow` to install.
+Double click the downloaded "Terminal.alfredworkflow" file to install.
 
 ## Usage
 
@@ -19,4 +18,4 @@ Typing `terminal` will open a new Terminal window.
 
 ## Author
 
-[OCHIISHI Koichiro](https://github.com/rakuishi)
+[rakuishi](https://github.com/rakuishi)
