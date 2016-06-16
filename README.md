@@ -16,6 +16,10 @@ Double click the downloaded "Terminal.alfredworkflow" file to install.
 
 Typing `terminal` will open a new Terminal window.
 
+## License
+
+MIT License
+
 ## Author
 
 [rakuishi](https://github.com/rakuishi)
