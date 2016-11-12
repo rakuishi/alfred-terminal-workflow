@@ -1,11 +1,10 @@
 # Alfred Workflow Terminal
 
-A workflow for [Alfred App](http://www.alfredapp.com) 2.0. Open active Finder folder in Terminal.
+A workflow for [Alfred](http://www.alfredapp.com) 2. Open active Finder folder in Terminal.
 
 ## Demo
 
 ![alfred-terminal-workflow](https://raw.githubusercontent.com/rakuishi/static/master/images/alfred-terminal-workflow.gif)
-
 
 ## Installation
 
@@ -15,11 +14,3 @@ Double click the downloaded "Terminal.alfredworkflow" file to install.
 ## Usage
 
 Typing `terminal` will open a new Terminal window.
-
-## License
-
-MIT License
-
-## Author
-
-[rakuishi](https://github.com/rakuishi)
