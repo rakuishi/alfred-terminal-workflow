@@ -1,4 +1,4 @@
-# Alfred Terminal Workflow
+# Alfred Workflow Terminal
 
 A workflow for [Alfred App](http://www.alfredapp.com) 2.0. Open active Finder folder in Terminal.
 
